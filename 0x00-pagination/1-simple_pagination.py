@@ -27,7 +27,8 @@ class Server:
 
     @staticmethod
     def index_range(page: int, page_size: int) -> Tuple[int, int]:
-        """Calculate the start and  the end index range for a `page` with `page_size`
+        """Calculate the start and  the end index range for a
+        `page` with `page_size`
         """
         nextPageStartIndex = page * page_size
         return nextPageStartIndex - page_size, nextPageStartIndex
